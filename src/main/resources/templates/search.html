@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../static/form_style.css" th:href="@{/form_style.css}">
+
+    <script type="text/javascript" src="../static/form_validate.js" th:href="@{/form_validate.js}"></script>
+
+    <title>Search</title>
+</head>
+<body>
+<form id="f" method="GET" action="#" th:action="@{/findByName}">
+    <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to search student.</p>
+        <hr>
+        <label for="studentName"><b>Student Name</b></label>
+        <input type="text" placeholder="Enter Student Name" name="studentName" id="studentName" required>
+
+        <button type="submit" class="predictbtn" onclick="return validate();">
+            Search
+        </button>
+    </div>
+</form>
+</body>
+</html>
