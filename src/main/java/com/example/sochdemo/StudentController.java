@@ -28,10 +28,17 @@ public class StudentController {
         studentRepository.save(student);
         return student;
     }
+
     @RequestMapping(value = "/clear",method = RequestMethod.GET)
     public String delete()
     {
         studentRepository.deleteAll();
         return "Repository Cleared";
+    }
+
+    @RequestMapping(value = "/hello",method = RequestMethod.GET)
+    public String hello()
+    {
+        return "Hello";
     }
 }
