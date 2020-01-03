@@ -1,4 +1,4 @@
-#A Simple Student Info Web Application using Spring Boot
+# A Simple Student Info Web Application using Spring Boot
 
 The repository implements a very simple application that takes Student information entered by the user and pushes it to a database.
 
